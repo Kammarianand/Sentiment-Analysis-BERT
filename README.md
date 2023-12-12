@@ -52,7 +52,7 @@ BERT is chosen for sentiment analysis due to its ability to understand the conte
 * Prediction: The trained model is used to predict the sentiment (positive or negative or neutral) of new input text based on learned patterns.
 
 
-### BERT Sentiment Analysis Workflow
+
 
 1. **Input:**
    - The input is the text data you want to perform sentiment analysis on. This text data is what you want BERT to analyze and make predictions about.
