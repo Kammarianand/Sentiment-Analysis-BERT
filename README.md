@@ -95,6 +95,29 @@ BERT is chosen for sentiment analysis due to its ability to understand the conte
 4. Domain-Specific Fine-Tuning
 5. Enhanced Accuracy  
 
+## How to Run the Project
+
+To run this project, follow these steps:
+
+1. **Ensure Both CSV and Notebook are Present:**
+   - Make sure that both the CSV file containing your data and the Jupyter Notebook (or any other notebook file) are located in the same directory.
+
+2. **Open the Notebook with Any Editor:**
+   - Open the Jupyter Notebook using any code editor or integrated development environment (IDE) of your choice. You can use editors like Jupyter, VSCode, or any other notebook-compatible environment.
+
+3. **Run the Cells:**
+   - Navigate through the notebook and run each cell sequentially. This can typically be done by selecting a cell and either clicking the "Run" button or using the keyboard shortcut (usually Shift + Enter).
+
+4. **Review Output:**
+   - After running all the cells, review the output and any generated visualizations or results within the notebook.
+
+
+### To check the sentiment within the text, pass the text as a parameter to this function.
+
+```
+prediction_on_raw_data(raw_text)
+
+```
 
 
 ## License
