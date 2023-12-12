@@ -1,5 +1,8 @@
 
 # Sentiment Analysis 
+![NLP](https://img.shields.io/badge/NLP-1F425F?style=for-the-badge)
+![BERT](https://img.shields.io/badge/BERT-3C9C8A?style=for-the-badge)
+
 
 This project utilizes sentiment analysis to analyze the sentiment of user reviews. The aim is to predict the sentiment of the reviews as either positive or negative using the BERT (Bidirectional Encoder Representations from Transformers) model.
 
@@ -24,13 +27,23 @@ BERT is chosen for sentiment analysis due to its ability to understand the conte
 
 
 ### Libraries Used
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Transformers
-- Torch
-- Requests
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=matplotlib&logoColor=white)
+
+![Seaborn](https://img.shields.io/badge/Seaborn-3776ab?style=for-the-badge&logo=seaborn&logoColor=white)
+
+![Transformers](https://img.shields.io/badge/Transformers-FFAC45?style=for-the-badge&logo=transformers&logoColor=white)
+
+![Torch](https://img.shields.io/badge/Torch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+
+![Requests](https://img.shields.io/badge/Requests-2CA5E0?style=for-the-badge&logo=requests&logoColor=white)
+
+<p>Deployment</p>
+
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 
 # Sentiment Analysis Workflow
 
@@ -39,23 +52,34 @@ BERT is chosen for sentiment analysis due to its ability to understand the conte
 * Prediction: The trained model is used to predict the sentiment (positive or negative or neutral) of new input text based on learned patterns.
 
 
-1. Input: the input is the text data you want to perform sentiment analysis on. This text data is what you want BERT to analyze and make predictions about.
+### BERT Sentiment Analysis Workflow
 
-2. Token: In NLP, a token is a unit of text, typically a word or a subword. BERT tokenizes your input text into these smaller units, which helps the model understand the text better.
+1. **Input:**
+   - The input is the text data you want to perform sentiment analysis on. This text data is what you want BERT to analyze and make predictions about.
 
-3. BERT Cased Tokenization: BERT uses a specific tokenization method, often called "WordPiece" tokenization. It tokenizes text into subword pieces, including both lowercase and uppercase versions. This helps capture case-related information.
+2. **Token:**
+   - In NLP, a token is a unit of text, typically a word or a subword. BERT tokenizes your input text into these smaller units, which helps the model understand the text better.
 
-4. Model Training: This refers to the process where the BERT model is trained on a large corpus of text data. During this phase, BERT learns to predict missing words (Masked Language Model, MLM) and understand sentence relationships (Next Sentence Prediction, NSP).
+3. **BERT Cased Tokenization:**
+   - BERT uses a specific tokenization method, often called "WordPiece" tokenization. It tokenizes text into subword pieces, including both lowercase and uppercase versions. This helps capture case-related information.
 
-5. Pre-training (MLM, NSP): BERT is pre-trained on a vast amount of text data using two tasks - MLM, where it predicts masked words in a sentence, and NSP, where it predicts whether two sentences are contiguous in the original text. This pre-training helps BERT capture general language understanding.
+4. **Model Training:**
+   - This refers to the process where the BERT model is trained on a large corpus of text data. During this phase, BERT learns to predict missing words (Masked Language Model, MLM) and understand sentence relationships (Next Sentence Prediction, NSP).
 
-6. Fine-tuning:  this is where you adapt the pre-trained BERT model to your specific task. You fine-tune the model on a labeled dataset for sentiment analysis.
+5. **Pre-training (MLM, NSP):**
+   - BERT is pre-trained on a vast amount of text data using two tasks - MLM, where it predicts masked words in a sentence, and NSP, where it predicts whether two sentences are contiguous in the original text. This pre-training helps BERT capture general language understanding.
 
-7. Classifier Layer: During fine-tuning, you typically add a classifier layer on top of the BERT model. This layer maps the BERT model's output to sentiment labels (positive, negative, neutral) in your case.
+6. **Fine-tuning:**
+   - This is where you adapt the pre-trained BERT model to your specific task. You fine-tune the model on a labeled dataset for sentiment analysis.
 
-8. CLS, SEP: In BERT, [CLS] and [SEP] tokens are special tokens used to denote the beginning and separation of sentences. The [CLS] token is particularly important, as it is used for classification tasks. It encapsulates information about the entire input sequence.
+7. **Classifier Layer:**
+   - During fine-tuning, you typically add a classifier layer on top of the BERT model. This layer maps the BERT model's output to sentiment labels (positive, negative, neutral) in your case.
 
-9.Output: Positive, Negative, Neutral: In your sentiment analysis project, the output refers to the predictions made by the BERT model. It will assign sentiment labels to the input text, such as "positive," "negative," or "neutral," based on the training it received.
+8. **CLS, SEP:**
+   - In BERT, [CLS] and [SEP] tokens are special tokens used to denote the beginning and separation of sentences. The [CLS] token is particularly important, as it is used for classification tasks. It encapsulates information about the entire input sequence.
+
+9. **Output: Positive, Negative, Neutral:**
+   - The output refers to the predictions made by the BERT model. It will assign sentiment labels to the input text, such as "positive," "negative," or "neutral," based on the training it received.
 
 
 
@@ -75,4 +99,4 @@ BERT is chosen for sentiment analysis due to its ability to understand the conte
 
 ## License
 
-[MIT](https://github.com/Kammarianand/Sentiment-Analysis-BERT/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-0178B5?style=for-the-badge)](https://github.com/Kammarianand/Sentiment-Analysis-BERT/blob/main/LICENSE)
